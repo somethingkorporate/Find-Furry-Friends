@@ -18,10 +18,9 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
         android:layout_below="@+id/section_label"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="37dp"
-        android:layout_marginTop="54dp">
+        android:layout_centerHorizontal="true">
 
         <ImageView
             android:layout_width="match_parent"
@@ -45,10 +44,11 @@
                 tools:ignore="ContentDescription" />
 
             <ImageButton
+                android:id="@+id/imageButton3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton3"
                 android:layout_weight="1"
+                android:src="@android:drawable/ic_menu_add"
                 tools:ignore="ContentDescription" />
 
             <ImageButton
@@ -80,7 +80,8 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="UselessLeaf">
+        tools:ignore="UselessLeaf"
+        android:id="@+id/linearLayout">
 
     </LinearLayout>
 
