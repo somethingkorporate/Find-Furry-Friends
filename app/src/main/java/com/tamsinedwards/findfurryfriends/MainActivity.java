@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        Intent changeScreen;
+        Intent changeScreen = new Intent();
         if (id == R.id.nav_favs) {
             changeScreen = new Intent(MainActivity.this, Favs.class);
         } else if (id == R.id.nav_notes) {

@@ -26,4 +26,5 @@
     <string name="title_activity_view_info">ViewInfo</string>
     <string name="title_activity_notes">Notes</string>
     <string name="title_activity_uplaod">Uplaod</string>
+    <string name="title_activity_upload">Upload</string>
 </resources>
