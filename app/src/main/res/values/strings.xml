@@ -24,4 +24,6 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="nav_bar_goes_here">nav bar goes here</string>
     <string name="title_activity_view_info">ViewInfo</string>
+    <string name="title_activity_notes">Notes</string>
+    <string name="title_activity_uplaod">Uplaod</string>
 </resources>

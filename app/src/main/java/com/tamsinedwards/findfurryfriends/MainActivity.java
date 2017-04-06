@@ -82,18 +82,20 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        Intent changeScreen;
         if (id == R.id.nav_favs) {
-            // Handle the camera action
+            changeScreen = new Intent(MainActivity.this, Favs.class);
         } else if (id == R.id.nav_notes) {
-
+            changeScreen = new Intent(MainActivity.this, Notes.class);
         } else if (id == R.id.nav_upload) {
-
+            changeScreen = new Intent(MainActivity.this, Upload.class);
         } else if (id == R.id.nav_search) {
-
+            changeScreen = new Intent(MainActivity.this, MainActivity.class);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+        startActivity(changeScreen);
         return true;
     }
 }

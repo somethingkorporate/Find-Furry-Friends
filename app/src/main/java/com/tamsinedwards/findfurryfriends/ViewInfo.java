@@ -1,5 +1,6 @@
 package com.tamsinedwards.findfurryfriends;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,7 +18,18 @@ public class ViewInfo extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         FloatingActionButton back = (FloatingActionButton) findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+               finish();
+            }
+        });
         FloatingActionButton search = (FloatingActionButton) findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent toSearch = new Intent(ViewInfo.this, MainActivity.class);
+                startActivity(toSearch);
+            }
+        });
     }
 
 }
