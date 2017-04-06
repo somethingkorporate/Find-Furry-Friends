@@ -16,7 +16,8 @@ public class ViewInfo extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
+        FloatingActionButton back = (FloatingActionButton) findViewById(R.id.back);
+        FloatingActionButton search = (FloatingActionButton) findViewById(R.id.search);
     }
 
 }
