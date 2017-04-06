@@ -85,8 +85,8 @@ public class MainActivity extends AppCompatActivity
         Intent changeScreen = new Intent();
         if (id == R.id.nav_favs) {
             changeScreen = new Intent(MainActivity.this, Favs.class);
-        } else if (id == R.id.nav_notes) {
-            changeScreen = new Intent(MainActivity.this, Notes.class);
+        } else if (id == R.id.nav_profile) {
+            changeScreen = new Intent(MainActivity.this, Profile.class);
         } else if (id == R.id.nav_upload) {
             changeScreen = new Intent(MainActivity.this, Upload.class);
         } else if (id == R.id.nav_search) {
