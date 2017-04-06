@@ -14,15 +14,9 @@ public class ViewInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_info);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
 
-        FloatingActionButton back = (FloatingActionButton) findViewById(R.id.back);
-        back.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-               finish();
-            }
-        });
         FloatingActionButton search = (FloatingActionButton) findViewById(R.id.search);
         search.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
