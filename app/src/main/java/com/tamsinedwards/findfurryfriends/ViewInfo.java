@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 
 public class ViewInfo extends AppCompatActivity {
@@ -20,8 +21,9 @@ public class ViewInfo extends AppCompatActivity {
         FloatingActionButton search = (FloatingActionButton) findViewById(R.id.search);
         search.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent toSearch = new Intent(ViewInfo.this, MainActivity.class);
-                startActivity(toSearch);
+                    Log.i("Tamsin","in onclick method viewinfo search");
+                    Intent toSearch = new Intent(ViewInfo.this, MainActivity.class);
+                    startActivity(toSearch);
             }
         });
     }
